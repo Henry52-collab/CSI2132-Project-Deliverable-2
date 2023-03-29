@@ -1,0 +1,6 @@
+127.0.0.1 - - [29/Mar/2023:00:32:05 -0400] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:00:32:05 -0400] "GET /eHotel/WEB-INF/classes/eHotel/connections/PostgreSqlConn.java HTTP/1.1" 404 683
+127.0.0.1 - - [29/Mar/2023:00:43:17 -0400] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:00:43:17 -0400] "GET /eHotel/ HTTP/1.1" 200 293
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:00:43:20 -0400] "GET /eHotel/Employee.html HTTP/1.1" 200 1036
+0:0:0:0:0:0:0:1 - - [29/Mar/2023:00:43:27 -0400] "POST /eHotel/logintest HTTP/1.1" 404 772
