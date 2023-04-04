@@ -1,4 +1,4 @@
--- Hotel
+-- Hotel----------------------------------------------------------------------------------------------------------
 CREATE TABLE Hotel(
 	Hotel_ID INT,
     Hotel_Chain_ID INT,
@@ -14,26 +14,26 @@ CREATE TABLE Hotel(
 -- Populate hotel Mariott
 INSERT INTO hotel
 VALUES
-(11111,10001,'FOUR',1000,'250 René-Lévesque Boulevard West Montreal, Quebec,H2Z 1Z8','admin@Marriott.com'),
-(11112,10001,'FOUR',1000,'2359 Banff Trail NW Calgary, Alberta,T2M-4L2','admin@Marriott.com'),
-(11113,10001,'FOUR',1000,'151 Bass Pro Mills Drive Vaughan, Ontario,L4K 0E6','admin@Marriott.com'),
-(11114,10001,'FIVE',1000,'13475 Central Avenue Surrey, British Columbia,V3T 0L8','admin@Marriott.com'),
-(11115,10001,'FIVE',1000,'340 de la Gauchetiere O Montreal, Quebec,H2Z0C3','admin@Marriott.com'),
-(11116,10001,'FIVE',1000,'1 Centennial Drive Kananaskis Village, Alberta,T0L 2H0','admin@Marriott.com'),
-(11117,10001,'THREE',1000,'1709 Lower Water Street Halifax, Nova Scotia, B3J 1S5','admin@Marriott.com'),
-(11118,10001,'THREE',1000,'184 Adolphus Street St Andrews, New Brunswick,E5B 1T7','admin@Marriott.com');
+(11111,10001,'FOUR',1000,'250 René-Lévesque Boulevard West ,Montreal,Quebec H2Z 1Z8','admin@Marriott.com'),
+(11112,10001,'FOUR',1000,'2359 Banff Trail NW ,Calgary,Alberta T2M-4L2','admin@Marriott.com'),
+(11113,10001,'FOUR',1000,'151 Bass Pro Mills Drive ,Vaughan, OntarioL4K 0E6','admin@Marriott.com'),
+(11114,10001,'FIVE',1000,'13475 Central Avenue ,Surrey, British Columbia V3T 0L8','admin@Marriott.com'),
+(11115,10001,'FIVE',1000,'340 de la Gauchetiere O ,Montreal,Quebec H2Z0C3','admin@Marriott.com'),
+(11116,10001,'FIVE',1000,'1 Centennial Drive ,Kananaskis Village,Alberta T0L 2H0','admin@Marriott.com'),
+(11117,10001,'THREE',1000,'1709 Lower Water Street ,Halifax,Nova Scotia B3J 1S5','admin@Marriott.com'),
+(11118,10001,'THREE',1000,'184 Adolphus Street ,St Andrews,New Brunswick E5B 1T7','admin@Marriott.com');
 
 -- Populate hotel JinJiang
 INSERT INTO hotel
 value
-(12111,10002,'THREE',1000,'240 René-Lévesque Boulevard West Montreal, Quebec, H2Z 1Z8','admin@JinJiang.com'),
-(12112,10002,'THREE',1000,'2378 Banff Trail NW Calgary, Alberta, T2M-4L2','admin@JinJiang.com'),
-(12113,10002,'FOUR',1000,'2077 Bass Pro Mills Drive Vaughan, Ontario, L4K 0E6','admin@JinJiang.com'),
-(12114,10002,'FOUR',1000,'13476 Central Avenue Surrey, British Columbia, V3T 0L8','admin@JinJiang.com'),
-(12115,10002,'FOUR',1000,'341 de la Gauchetiere O Montreal, Quebec, H2Z0C3','admin@JinJiang.com'),
-(12116,10002,'FOUR',1000,'2 Centennial Drive Kananaskis Village, Alberta, T0L 2H0','admin@JinJiang.com'),
-(12117,10002,'TWO',1000,'1710 Lower Water Street Halifax, Nova Scotia, B3J 1S5','admin@JinJiang.com'),
-(12118,10002,'TWO',1000,'185 Adolphus Street St Andrews, New Brunswick, E5B 1T7','admin@JinJiang.com');
+(12111,10002,'THREE',1000,'240 René-Lévesque Boulevard West ,Montreal, Quebec H2Z 1Z8','admin@JinJiang.com'),
+(12112,10002,'THREE',1000,'2378 Banff Trail NW ,Calgary,Alberta T2M-4L2','admin@JinJiang.com'),
+(12113,10002,'FOUR',1000,'2077 Bass Pro Mills Drive ,Vaughan,Ontario L4K 0E6','admin@JinJiang.com'),
+(12114,10002,'FOUR',1000,'13476 Central Avenue ,Surrey,British Columbia V3T 0L8','admin@JinJiang.com'),
+(12115,10002,'FOUR',1000,'341 de la Gauchetiere O ,Montreal,Quebec H2Z0C3','admin@JinJiang.com'),
+(12116,10002,'FOUR',1000,'2 Centennial Drive ,Kananaskis Village,Alberta T0L 2H0','admin@JinJiang.com'),
+(12117,10002,'TWO',1000,'1710 Lower Water Street ,Halifax,Nova Scotia B3J 1S5','admin@JinJiang.com'),
+(12118,10002,'TWO',1000,'185 Adolphus Street ,St Andrews,New Brunswick E5B 1T7','admin@JinJiang.com');
 
 
 
@@ -56,8 +56,8 @@ value
 
 
 
--- DROP TABLE Hotel; 
-
+DROP TABLE Hotel; 
+-- -----------------------------------------------------------------------------------------------------------
 -- Hotel chain
 CREATE TABLE HotelChain(
 	Name VARCHAR(10),
@@ -80,7 +80,7 @@ Drop table hotelChain;
 
 SELECT * FROM HotelChain;
 
--- Room
+-- Room----------------------------------------------------------------------------------------------------------------
 CREATE TABLE Room(
 	Room_ID INT,
     Hotel_ID INT,
@@ -94,6 +94,8 @@ CREATE TABLE Room(
     FOREIGN KEY(Hotel_ID) REFERENCES Hotel(Hotel_ID),
     FOREIGN KEY (Hotel_ChainID) REFERENCES HotelChain(HotelChainID)
 );
+
+-- ------------------------------------------------------------------------------------------------
 
 -- Populate rooms
 
@@ -250,9 +252,9 @@ VALUES
 
 -- Insert rooms into Wyndham hotels
 
--- DROP TABLE Room;
+ DROP TABLE Room;
 
--- Customer
+-- Customer--------------------------------------------------------------------------------------------
 CREATE TABLE Customer(
 	CustomerID INT,
     First_name VARCHAR(100) NOT NULL,
@@ -266,7 +268,7 @@ CREATE TABLE Customer(
 
 DROP TABLE Customer;
 
--- Rental 
+-- Rental -----------------------------------------------------------------------------------------------
 CREATE TABLE Rental(
 	Rental_ID INT NOT NULL PRIMARY KEY,
     Customer_ID INT NOT NULL,
@@ -293,7 +295,7 @@ CREATE TABLE Rental(
 
 
 
--- Manager
+-- Manager--------------------------------------------------------------------------------------------------------
 
 
 
@@ -304,11 +306,21 @@ CREATE TABLE Rental(
 -- Contains the total number of available rooms within the same city 
 -- How to update room number in hotel?
 
-SELECT substring(A.address,LOCATE(',',A.address),length(A.address)) FROM hotel A;
+SELECT SUBSTRING_INDEX(SUBSTRING(A.address,LOCATE(',',A.address) + 1,LENGTH(A.address)),',',1) FROM hotel A;
+SELECT COUNT(R.Room_ID) FROM Room R WHERE R.availability = true ;
 
 CREATE VIEW Available_Rooms AS
-SELECT A.address,B.name,SUM(A.number_Of_Rooms),A.category
-FROM Hotel A,Hotelchain B
-WHERE A.Hotel_Chain_ID = B.HotelChainID AND A.address LIKE '%%';
+SELECT SUBSTRING_INDEX(SUBSTRING(A.address,LOCATE(',',A.address) + 1,LENGTH(A.address)),',',1) AS city, SUM(R.Room_ID) AS NumberOfRooms
+FROM hotel A, hotelchain B, Room R
+WHERE A.Hotel_Chain_ID = B.HotelChainID AND B.hotelChainID = R.Hotel_ChainID AND R.availability = true
+AND R.Hotel_ID = A.Hotel_ID
+GROUP BY city;
+
+SELECT * FROM Available_Rooms;
+
+
+UPDATE Room
+SET availability = false
+WHERE Room_ID = 000;
 
 Drop view available_rooms;
