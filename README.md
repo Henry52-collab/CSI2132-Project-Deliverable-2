@@ -1,6 +1,7 @@
 # CSI2132-Project-Deliverable-2
 - SQL backend: backend database, that's where we do 1,2,3,4,5,7
 - ehotel: java code connector with database, also the user interface
+- User interface will use HTML template
 # Repo Instructions
 1. Clone the repo
    ```
