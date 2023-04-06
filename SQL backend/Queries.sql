@@ -35,17 +35,29 @@ value
 (12117,10002,'TWO',1000,'1710 Lower Water Street ,Halifax,Nova Scotia B3J 1S5','admin@JinJiang.com'),
 (12118,10002,'TWO',1000,'185 Adolphus Street ,St Andrews,New Brunswick E5B 1T7','admin@JinJiang.com');
 
-
-
-
 -- Populate hotel Hilton 
-
-
+INSERT INTO hotel
+VALUES
+(13111,10003,'FIVE',1000,'985 St Laurent Blvd ,Montreal,Quebec H2Z 1J4','admin@Hilton.com'),
+(13112,10003,'FIVE',1000,'711 4 St. SE Suite A ,Calgary,AlbertaT2G 1N3','admin@Hilton.com'),
+(13113,10003,'FOUR',1000,'3201 Hwy 7 ,Vaughan,Ontario L4K 5Z7','admin@Hilton.com'),
+(13114,10003,'FOUR',1000,'111 Robson St,Vancouver,British Columbia V6B 2A8','admin@Hilton.com'),
+(13115,10003,'FOUR',1000,'6939 Decarie Blvd ,Montreal,Quebec H3W 3E4','admin@Hilton.com'),
+(13116,10003,'THREE',1000,'393 Gregg Ave ,Hinton,Alberta T7V 1N1','admin@Hilton.com'),
+(13117,10003,'THREE',1000,'1960 Brunswick St ,Halifax,Nova Scotia B3J 2G75','admin@Hilton.com'),
+(13118,10003,'THREE',1000,'1 Market Square ,Saint John,New Brunswick E2L 4Z6','admin@Hilton.com');
 
 -- Populate hotel IHG
-
-
-
+INSERT INTO hotel
+VALUES
+(14111,10004,'FIVE',1000,'1390 René-Lévesque Blvd W ,Montreal,Quebec H3G 0E3','admin@IHG.com'),
+(14112,10004,'FIVE',1000,'64 East Lake Ave NE ,Airdrie,Alberta T4A 2G8','admin@IHG.com'),
+(14113,10004,'FIVE',1000,'225 Front St W ,Toronto,Ontario M5V 2X3','admin@IHG.com'),
+(14114,10004,'FIVE',1000,'10688 No 6 Rd ,Richmond,British Columbia V6W 1E7','admin@IHG.com'),
+(14115,10004,'FOUR',1000,'10888 Chem. de la Côte de Liesse , Montréal,Quebec H8T 1A6','admin@IHG.com'),
+(14116,10004,'FOUR',1000,'4721 49 St ,Whitecourt,AlbertaT7S 0E8','admin@IHG.com'),
+(14117,10004,'FOUR',1000,'335 John Savage Ave ,Dartmouth,Nova Scotia B3B 0J3','admin@IHG.com'),
+(14118,10004,'THREE',1000,'425 Boulevard Adelard Savoie ,Dieppe,New Brunswick E1A 7E6','admin@IHG.com');
 
 -- Populate hotel Wyndham
 
