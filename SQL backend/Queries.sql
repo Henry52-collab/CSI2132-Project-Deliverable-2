@@ -14,50 +14,50 @@ CREATE TABLE Hotel(
 -- Populate hotel Mariott
 INSERT INTO hotel
 VALUES
-(11111,10001,'FOUR',1000,'250 René-Lévesque Boulevard West ,Montreal,Quebec H2Z 1Z8','admin@Marriott.com'),
-(11112,10001,'FOUR',1000,'2359 Banff Trail NW ,Calgary,Alberta T2M-4L2','admin@Marriott.com'),
-(11113,10001,'FOUR',1000,'151 Bass Pro Mills Drive ,Vaughan, OntarioL4K 0E6','admin@Marriott.com'),
-(11114,10001,'FIVE',1000,'13475 Central Avenue ,Surrey, British Columbia V3T 0L8','admin@Marriott.com'),
-(11115,10001,'FIVE',1000,'340 de la Gauchetiere O ,Montreal,Quebec H2Z0C3','admin@Marriott.com'),
-(11116,10001,'FIVE',1000,'1 Centennial Drive ,Kananaskis Village,Alberta T0L 2H0','admin@Marriott.com'),
-(11117,10001,'THREE',1000,'1709 Lower Water Street ,Halifax,Nova Scotia B3J 1S5','admin@Marriott.com'),
-(11118,10001,'THREE',1000,'184 Adolphus Street ,St Andrews,New Brunswick E5B 1T7','admin@Marriott.com');
+(11111,10001,'FOUR',5,'250 René-Lévesque Boulevard West ,Montreal,Quebec H2Z 1Z8','admin@Marriott.com'),
+(11112,10001,'FOUR',5,'2359 Banff Trail NW ,Calgary,Alberta T2M-4L2','admin@Marriott.com'),
+(11113,10001,'FOUR',5,'151 Bass Pro Mills Drive ,Vaughan, OntarioL4K 0E6','admin@Marriott.com'),
+(11114,10001,'FIVE',5,'13475 Central Avenue ,Surrey, British Columbia V3T 0L8','admin@Marriott.com'),
+(11115,10001,'FIVE',5,'340 de la Gauchetiere O ,Montreal,Quebec H2Z0C3','admin@Marriott.com'),
+(11116,10001,'FIVE',5,'1 Centennial Drive ,Kananaskis Village,Alberta T0L 2H0','admin@Marriott.com'),
+(11117,10001,'THREE',5,'1709 Lower Water Street ,Halifax,Nova Scotia B3J 1S5','admin@Marriott.com'),
+(11118,10001,'THREE',5,'184 Adolphus Street ,St Andrews,New Brunswick E5B 1T7','admin@Marriott.com');
 
 -- Populate hotel JinJiang
 INSERT INTO hotel
 value
-(12111,10002,'THREE',1000,'240 René-Lévesque Boulevard West ,Montreal, Quebec H2Z 1Z8','admin@JinJiang.com'),
-(12112,10002,'THREE',1000,'2378 Banff Trail NW ,Calgary,Alberta T2M-4L2','admin@JinJiang.com'),
-(12113,10002,'FOUR',1000,'2077 Bass Pro Mills Drive ,Vaughan,Ontario L4K 0E6','admin@JinJiang.com'),
-(12114,10002,'FOUR',1000,'13476 Central Avenue ,Surrey,British Columbia V3T 0L8','admin@JinJiang.com'),
-(12115,10002,'FOUR',1000,'341 de la Gauchetiere O ,Montreal,Quebec H2Z0C3','admin@JinJiang.com'),
-(12116,10002,'FOUR',1000,'2 Centennial Drive ,Kananaskis Village,Alberta T0L 2H0','admin@JinJiang.com'),
-(12117,10002,'TWO',1000,'1710 Lower Water Street ,Halifax,Nova Scotia B3J 1S5','admin@JinJiang.com'),
-(12118,10002,'TWO',1000,'185 Adolphus Street ,St Andrews,New Brunswick E5B 1T7','admin@JinJiang.com');
+(12111,10002,'THREE',5,'240 René-Lévesque Boulevard West ,Montreal, Quebec H2Z 1Z8','admin@JinJiang.com'),
+(12112,10002,'THREE',5,'2378 Banff Trail NW ,Calgary,Alberta T2M-4L2','admin@JinJiang.com'),
+(12113,10002,'FOUR',5,'2077 Bass Pro Mills Drive ,Vaughan,Ontario L4K 0E6','admin@JinJiang.com'),
+(12114,10002,'FOUR',5,'13476 Central Avenue ,Surrey,British Columbia V3T 0L8','admin@JinJiang.com'),
+(12115,10002,'FOUR',5,'341 de la Gauchetiere O ,Montreal,Quebec H2Z0C3','admin@JinJiang.com'),
+(12116,10002,'FOUR',5,'2 Centennial Drive ,Kananaskis Village,Alberta T0L 2H0','admin@JinJiang.com'),
+(12117,10002,'TWO',5,'1710 Lower Water Street ,Halifax,Nova Scotia B3J 1S5','admin@JinJiang.com'),
+(12118,10002,'TWO',5,'185 Adolphus Street ,St Andrews,New Brunswick E5B 1T7','admin@JinJiang.com');
 
 -- Populate hotel Hilton 
 INSERT INTO hotel
 VALUES
-(13111,10003,'FIVE',1000,'985 St Laurent Blvd ,Montreal,Quebec H2Z 1J4','admin@Hilton.com'),
-(13112,10003,'FIVE',1000,'711 4 St. SE Suite A ,Calgary,AlbertaT2G 1N3','admin@Hilton.com'),
-(13113,10003,'FOUR',1000,'3201 Hwy 7 ,Vaughan,Ontario L4K 5Z7','admin@Hilton.com'),
-(13114,10003,'FOUR',1000,'111 Robson St,Vancouver,British Columbia V6B 2A8','admin@Hilton.com'),
-(13115,10003,'FOUR',1000,'6939 Decarie Blvd ,Montreal,Quebec H3W 3E4','admin@Hilton.com'),
-(13116,10003,'THREE',1000,'393 Gregg Ave ,Hinton,Alberta T7V 1N1','admin@Hilton.com'),
-(13117,10003,'THREE',1000,'1960 Brunswick St ,Halifax,Nova Scotia B3J 2G75','admin@Hilton.com'),
-(13118,10003,'THREE',1000,'1 Market Square ,Saint John,New Brunswick E2L 4Z6','admin@Hilton.com');
+(13111,10003,'FIVE',5,'985 St Laurent Blvd ,Montreal,Quebec H2Z 1J4','admin@Hilton.com'),
+(13112,10003,'FIVE',5,'711 4 St. SE Suite A ,Calgary,AlbertaT2G 1N3','admin@Hilton.com'),
+(13113,10003,'FOUR',5,'3201 Hwy 7 ,Vaughan,Ontario L4K 5Z7','admin@Hilton.com'),
+(13114,10003,'FOUR',5,'111 Robson St,Vancouver,British Columbia V6B 2A8','admin@Hilton.com'),
+(13115,10003,'FOUR',5,'6939 Decarie Blvd ,Montreal,Quebec H3W 3E4','admin@Hilton.com'),
+(13116,10003,'THREE',5,'393 Gregg Ave ,Hinton,Alberta T7V 1N1','admin@Hilton.com'),
+(13117,10003,'THREE',5,'1960 Brunswick St ,Halifax,Nova Scotia B3J 2G75','admin@Hilton.com'),
+(13118,10003,'THREE',5,'1 Market Square ,Saint John,New Brunswick E2L 4Z6','admin@Hilton.com');
 
 -- Populate hotel IHG
 INSERT INTO hotel
 VALUES
-(14111,10004,'FIVE',1000,'1390 René-Lévesque Blvd W ,Montreal,Quebec H3G 0E3','admin@IHG.com'),
-(14112,10004,'FIVE',1000,'64 East Lake Ave NE ,Airdrie,Alberta T4A 2G8','admin@IHG.com'),
-(14113,10004,'FIVE',1000,'225 Front St W ,Toronto,Ontario M5V 2X3','admin@IHG.com'),
-(14114,10004,'FIVE',1000,'10688 No 6 Rd ,Richmond,British Columbia V6W 1E7','admin@IHG.com'),
-(14115,10004,'FOUR',1000,'10888 Chem. de la Côte de Liesse , Montréal,Quebec H8T 1A6','admin@IHG.com'),
-(14116,10004,'FOUR',1000,'4721 49 St ,Whitecourt,AlbertaT7S 0E8','admin@IHG.com'),
-(14117,10004,'FOUR',1000,'335 John Savage Ave ,Dartmouth,Nova Scotia B3B 0J3','admin@IHG.com'),
-(14118,10004,'THREE',1000,'425 Boulevard Adelard Savoie ,Dieppe,New Brunswick E1A 7E6','admin@IHG.com');
+(14111,10004,'FIVE',5,'1390 René-Lévesque Blvd W ,Montreal,Quebec H3G 0E3','admin@IHG.com'),
+(14112,10004,'FIVE',5,'64 East Lake Ave NE ,Airdrie,Alberta T4A 2G8','admin@IHG.com'),
+(14113,10004,'FIVE',5,'225 Front St W ,Toronto,Ontario M5V 2X3','admin@IHG.com'),
+(14114,10004,'FIVE',5,'10688 No 6 Rd ,Richmond,British Columbia V6W 1E7','admin@IHG.com'),
+(14115,10004,'FOUR',5,'10888 Chem. de la Côte de Liesse , Montréal,Quebec H8T 1A6','admin@IHG.com'),
+(14116,10004,'FOUR',5,'4721 49 St ,Whitecourt,AlbertaT7S 0E8','admin@IHG.com'),
+(14117,10004,'FOUR',5,'335 John Savage Ave ,Dartmouth,Nova Scotia B3B 0J3','admin@IHG.com'),
+(14118,10004,'THREE',5,'425 Boulevard Adelard Savoie ,Dieppe,New Brunswick E1A 7E6','admin@IHG.com');
 
 -- Populate hotel Wyndham
 
@@ -107,6 +107,7 @@ CREATE TABLE Room(
     FOREIGN KEY (Hotel_ChainID) REFERENCES HotelChain(HotelChainID)
 );
 
+DROP TABLE Room;
 -- ------------------------------------------------------------------------------------------------
 
 -- Populate rooms
@@ -264,7 +265,7 @@ VALUES
 
 -- Insert rooms into Wyndham hotels
 
- DROP TABLE Room;
+
 
 -- Customer--------------------------------------------------------------------------------------------
 CREATE TABLE Customer(
@@ -314,25 +315,67 @@ CREATE TABLE Rental(
 -- The user should be able to see two specific Views.
 -- You have to implement the views as SQL views. 
 -- View 1: the first view is the number of available rooms per area. 
--- View 2: the second view is the capacity of all the rooms of a specific hotel.
 -- Contains the total number of available rooms within the same city 
 -- How to update room number in hotel?
-
+-- Add attribute city to hotel?  
 SELECT SUBSTRING_INDEX(SUBSTRING(A.address,LOCATE(',',A.address) + 1,LENGTH(A.address)),',',1) FROM hotel A;
 SELECT COUNT(R.Room_ID) FROM Room R WHERE R.availability = true ;
 
 CREATE VIEW Available_Rooms AS
 SELECT SUBSTRING_INDEX(SUBSTRING(A.address,LOCATE(',',A.address) + 1,LENGTH(A.address)),',',1) AS city, SUM(R.Room_ID) AS NumberOfRooms
 FROM hotel A, hotelchain B, Room R
-WHERE A.Hotel_Chain_ID = B.HotelChainID AND B.hotelChainID = R.Hotel_ChainID AND R.availability = true
+WHERE R.availability = true
 AND R.Hotel_ID = A.Hotel_ID
 GROUP BY city;
 
 SELECT * FROM Available_Rooms;
-
+SELECT * FROM room;
 
 UPDATE Room
 SET availability = false
 WHERE Room_ID = 000;
 
 Drop view available_rooms;
+
+select * FROM room;
+
+-- View 2: the second view is the capacity of all the rooms of a specific hotel.
+CREATE VIEW Capacity AS
+SELECT hotelchain.Name,SUM(room.Capacity) AS hotelCapacity,hotel.Hotel_ID
+FROM hotel,hotelchain,room
+WHERE hotel.Hotel_Chain_ID = hotelchain.HotelChainID AND room.Hotel_ID = hotel.Hotel_ID
+GROUP BY hotelchain.Name,room.Hotel_ID;
+
+-- Test
+UPDATE room
+SET capacity = 5
+WHERE room_ID  = 000;
+
+drop view capacity;
+SELECT * FROM capacity;
+
+
+-- Implement at least three indexes on the relations of your database 
+-- and justify why you have chosen these indexes: explain what type of queries and data updates you are expecting on your database 
+-- and how these indexes are useful to accelerate querying the database.
+
+-- The customer might be intersted in seeing all availble rooms with a mountain view or a sea view.
+-- The query:
+-- SELECT * FROM Room WHERE view = mountain;
+-- As there are a lot of records present in table room, it would increase efficiency to create an index on room(view).
+CREATE INDEX view_index ON room(view);
+DROP INDEX  view_index ON room;
+-- The hotel staff might need to search up a customer with a specific name and to check if the given customer is a resident of the hotel.
+-- The query:
+-- SELECT * FROM Customer WHERE first_name = John AND middle_name = Chris AND last_name = Doe;
+-- As there are a lot of customer that exist in the database,creating an index on customer(First_name,middle_name,last_name)
+-- would increase search efficiency 
+CREATE INDEX room_index ON customer(First_name,middle_name,last_name);
+DROP INDEX  room_index ON customer;
+-- An index on the room attribute capacity might be needed because the database frequently filters using catagory of rooms.
+-- The application will have a function for the users to search for hotels under a specific category using the query:
+-- SELECT FROM hotel WHERE category = 'FIVE';
+-- Search for a specified value for the category attribute is far more efficient than scanning through all the tuples
+-- of the relation. 
+CREATE INDEX category_index ON Hotel(category);
+DROP INDEX category_index ON hotel;
