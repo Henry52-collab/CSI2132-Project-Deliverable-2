@@ -379,3 +379,10 @@ DROP INDEX  room_index ON customer;
 -- of the relation. 
 CREATE INDEX category_index ON Hotel(category);
 DROP INDEX category_index ON hotel;
+
+
+-- Queries
+SELECT * FROM Room WHERE extension = true AND view = 'mountain';
+SELECT * FROM hotel WHERE number_Of_Rooms > 3 AND category = "FOUR";
+SELECT * FROM hotelChain WHERE Name = 'IHG' OR Name = 'Marriott';
+SELECT * FROM Room WHERE Room.hotel_ID IN (SELECT hotel_ID FROM hotel);
