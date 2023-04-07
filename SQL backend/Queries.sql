@@ -252,16 +252,157 @@ VALUES
 -- 12118
 INSERT INTO Room
 VALUES
-(135,12117,10002,120,3,'sea',false,true),
-(136,12117,10002,130,2,'mountain',true,true),
-(137,12117,10002,150,1,'mountain',false,true),
-(138,12117,10002,120,3,'sea',false,true),
-(139,12117,10002,130,2,'mountain',false,true);
-
+(135,12118,10002,120,3,'sea',false,true),
+(136,12118,10002,130,2,'mountain',true,true),
+(137,12118,10002,150,1,'mountain',false,true),
+(138,12118,10002,120,3,'sea',false,true),
+(139,12118,10002,130,2,'mountain',false,true);
 
 -- Insert rooms into Hilton hotels
+-- 13111
+INSERT INTO Room
+VALUES
+(000,13111,10003,120,3,'sea',false,true),
+(001,13111,10003,130,2,'mountain',false,true),
+(002,13111,10003,150,1,'mountain',true,true),
+(003,13111,10003,120,3,'mountain',false,true),
+(004,13111,10003,130,2,'mountain',false,true);
+
+-- 13112
+INSERT INTO Room
+VALUES
+(000,13112,10003,120,3,'sea',false,true),
+(001,13112,10003,130,2,'mountain',false,true),
+(002,13112,10003,150,1,'mountain',true,true),
+(003,13112,10003,120,3,'mountain',false,true),
+(004,13112,10003,130,2,'mountain',false,true);
+
+-- 13113
+INSERT INTO Room
+VALUES
+(000,13113,10003,120,3,'sea',false,true),
+(001,13113,10003,130,2,'mountain',false,true),
+(002,13113,10003,150,1,'mountain',true,true),
+(003,13113,10003,120,3,'mountain',false,true),
+(004,13113,10003,130,2,'mountain',false,true);
+
+-- 13114
+INSERT INTO Room
+VALUES
+(000,13114,10003,120,3,'sea',false,true),
+(001,13114,10003,130,2,'mountain',false,true),
+(002,13114,10003,150,1,'mountain',true,true),
+(003,13114,10003,120,3,'mountain',false,true),
+(004,13114,10003,130,2,'mountain',false,true);
+
+-- 13115
+INSERT INTO Room
+VALUES
+(000,13115,10003,120,3,'sea',false,true),
+(001,13115,10003,130,2,'mountain',false,true),
+(002,13115,10003,150,1,'mountain',true,true),
+(003,13115,10003,120,3,'mountain',false,true),
+(004,13115,10003,130,2,'mountain',false,true);
+
+-- 13116
+INSERT INTO Room
+VALUES
+(000,13116,10003,120,3,'sea',false,true),
+(001,13116,10003,130,2,'mountain',false,true),
+(002,13116,10003,150,1,'mountain',true,true),
+(003,13116,10003,120,3,'mountain',false,true),
+(004,13116,10003,130,2,'mountain',false,true);
+
+-- 13117
+INSERT INTO Room
+VALUES
+(000,13117,10003,120,3,'sea',false,true),
+(001,13117,10003,130,2,'mountain',false,true),
+(002,13117,10001,150,1,'mountain',true,true),
+(003,13117,10003,120,3,'mountain',false,true),
+(004,13117,10003,130,2,'mountain',false,true);
+
+-- 13118
+INSERT INTO Room
+VALUES
+(000,13118,10003,120,3,'sea',false,true),
+(001,13118,10003,130,2,'mountain',false,true),
+(002,13118,10003,150,1,'mountain',true,true),
+(003,13118,10003,120,3,'mountain',false,true),
+(004,13118,10003,130,2,'mountain',false,true);
 
 -- Insert rooms into IHG hotels
+-- 14111
+INSERT INTO Room
+VALUES
+(000,14111,10004,120,3,'sea',false,true),
+(001,14111,10004,130,2,'mountain',false,true),
+(002,14111,10004,150,1,'mountain',true,true),
+(003,14111,10004,120,3,'mountain',false,true),
+(004,14111,10004,130,2,'mountain',false,true);
+
+-- 14112
+INSERT INTO Room
+VALUES
+(000,14112,10004,120,3,'sea',false,true),
+(001,14112,10004,130,2,'mountain',false,true),
+(002,14112,10004,150,1,'mountain',true,true),
+(003,14112,10004,120,3,'mountain',false,true),
+(004,14112,10004,130,2,'mountain',false,true);
+
+-- 14113
+INSERT INTO Room
+VALUES
+(000,14113,10004,120,3,'sea',false,true),
+(001,14113,10004,130,2,'mountain',false,true),
+(002,14113,10004,150,1,'mountain',true,true),
+(003,14113,10004,120,3,'mountain',false,true),
+(004,14113,10004,130,2,'mountain',false,true);
+
+-- 14114
+INSERT INTO Room
+VALUES
+(000,14114,10004,120,3,'sea',false,true),
+(001,14114,10004,130,2,'mountain',false,true),
+(002,14114,10004,150,1,'mountain',true,true),
+(003,14114,10004,120,3,'mountain',false,true),
+(004,14114,10004,130,2,'mountain',false,true);
+
+-- 14115
+INSERT INTO Room
+VALUES
+(000,14115,10004,120,3,'sea',false,true),
+(001,14115,10004,130,2,'mountain',false,true),
+(002,14115,10004,150,1,'mountain',true,true),
+(003,14115,10004,120,3,'mountain',false,true),
+(004,14115,10004,130,2,'mountain',false,true);
+
+-- 14116
+INSERT INTO Room
+VALUES
+(000,14116,10004,120,3,'sea',false,true),
+(001,14116,10004,130,2,'mountain',false,true),
+(002,14116,10004,150,1,'mountain',true,true),
+(003,14116,10004,120,3,'mountain',false,true),
+(004,14116,10004,130,2,'mountain',false,true);
+
+-- 14117
+INSERT INTO Room
+VALUES
+(000,14117,10004,120,3,'sea',false,true),
+(001,14117,10004,130,2,'mountain',false,true),
+(002,14117,10004,150,1,'mountain',true,true),
+(003,14117,10004,120,3,'mountain',false,true),
+(004,14117,10004,130,2,'mountain',false,true);
+
+-- 14118
+INSERT INTO Room
+VALUES
+(000,14118,10004,120,3,'sea',false,true),
+(001,14118,10004,130,2,'mountain',false,true),
+(002,14118,10004,150,1,'mountain',true,true),
+(003,14118,10004,120,3,'mountain',false,true),
+(004,14118,10004,130,2,'mountain',false,true);
 
 -- Insert rooms into Wyndham hotels
 
