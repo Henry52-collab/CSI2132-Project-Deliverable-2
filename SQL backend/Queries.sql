@@ -527,3 +527,46 @@ SELECT * FROM Room WHERE extension = true AND view = 'mountain';
 SELECT * FROM hotel WHERE number_Of_Rooms > 3 AND category = "FOUR";
 SELECT * FROM hotelChain WHERE Name = 'IHG' OR Name = 'Marriott';
 SELECT * FROM Room WHERE Room.hotel_ID IN (SELECT hotel_ID FROM hotel);
+
+
+-- Query 1: Get all customers who registered in a specific month
+SELECT * FROM Customer
+WHERE MONTH(Date_Of_Registration) = 3;
+
+-- Query 2: Get all rooms in a specific hotel chain with a sea view and capacity greater than 2
+SELECT Room.*
+FROM Room
+         JOIN Hotel ON Room.Hotel_ID = Hotel.Hotel_ID
+         JOIN HotelChain ON Hotel.Hotel_Chain_ID = HotelChain.HotelChainID
+WHERE HotelChain.Name = 'Marriott' AND Room.view = 'sea' AND Room.Capacity > 2;
+
+-- Query 3: Get the total revenue of a hotel chain for a specific month
+SELECT SUM(Rental.Price)
+FROM Rental
+         JOIN Room ON Rental.Room_ID = Room.Room_ID
+         JOIN Hotel ON Room.Hotel_ID = Hotel.Hotel_ID
+         JOIN HotelChain ON Hotel.Hotel_Chain_ID = HotelChain.HotelChainID
+WHERE HotelChain.Name = 'Hilton' AND MONTH(Rental.Start_Date) = 2;
+
+-- Query 4: Get all bookings for a specific room in a specific hotel
+SELECT *
+FROM Booking
+WHERE Room_ID = 130 AND Hotel_ID = 13112;
+
+-- Trigger 1: Ensure that the room capacity is greater than 0 when inserting or updating a room
+CREATE TRIGGER check_capacity
+    BEFORE INSERT OR UPDATE ON Room
+                         FOR EACH ROW
+BEGIN
+    IF NEW.Capacity <= 0 THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Room capacity must be greater than 0';
+END IF;
+END;
+
+-- Trigger 2: Update the number of rooms in a hotel whenever a room is inserted or deleted
+CREATE TRIGGER update_num_rooms
+    AFTER INSERT OR DELETE ON Room
+FOR EACH ROW
+BEGIN
+UPDATE Hotel SET number_Of_Rooms = number_Of_Rooms + IF(NEW.availability = true, 1, -1) WHERE Hotel_ID = NEW.Hotel_ID;
+END;
