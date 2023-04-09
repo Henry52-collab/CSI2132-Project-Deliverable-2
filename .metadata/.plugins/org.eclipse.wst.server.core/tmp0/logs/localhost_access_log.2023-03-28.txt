@@ -1,7 +1,0 @@
-127.0.0.1 - - [28/Mar/2023:23:06:26 -0400] "GET / HTTP/1.1" 404 752
-0:0:0:0:0:0:0:1 - - [28/Mar/2023:23:35:57 -0400] "GET /eHotel/WEB-INF/classes/eHotel/connections/PostgreSqlConn.java HTTP/1.1" 404 683
-0:0:0:0:0:0:0:1 - - [28/Mar/2023:23:35:57 -0400] "GET /favicon.ico HTTP/1.1" 404 763
-127.0.0.1 - - [28/Mar/2023:23:36:35 -0400] "GET / HTTP/1.1" 404 752
-0:0:0:0:0:0:0:1 - - [28/Mar/2023:23:36:36 -0400] "GET /eHotel/WEB-INF/classes/eHotel/connections/PostgreSqlConn.java HTTP/1.1" 404 683
-127.0.0.1 - - [28/Mar/2023:23:40:33 -0400] "GET / HTTP/1.1" 404 752
-0:0:0:0:0:0:0:1 - - [28/Mar/2023:23:40:33 -0400] "GET /eHotel/WEB-INF/classes/eHotel/connections/PostgreSqlConn.java HTTP/1.1" 404 683

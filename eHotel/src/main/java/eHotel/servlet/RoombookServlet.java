@@ -1,6 +1,7 @@
 package eHotel.servlet;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 
 import javax.servlet.ServletException;
@@ -9,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import eHotel.connections.PostgreSqlConn;
+import eHotel.connections.MySqlConn;
 import eHotel.entities.Room;
 import eHotel.entities.employee;
 
@@ -26,7 +27,7 @@ public class RoombookServlet extends HttpServlet {
 		String roomno = req.getParameter("roomno");
 		
 		
-		PostgreSqlConn con = new PostgreSqlConn();
+		MySqlConn con = new MySqlConn();
 		
 		String userSSN = con.bookRoom(custName,roomno);
 		
