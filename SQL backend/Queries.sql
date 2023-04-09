@@ -1,3 +1,4 @@
+
 -- Hotel----------------------------------------------------------------------------------------------------------
 CREATE TABLE Hotel(
 	Hotel_ID INT,
@@ -570,3 +571,4 @@ FOR EACH ROW
 BEGIN
 UPDATE Hotel SET number_Of_Rooms = number_Of_Rooms + IF(NEW.availability = true, 1, -1) WHERE Hotel_ID = NEW.Hotel_ID;
 END;
+

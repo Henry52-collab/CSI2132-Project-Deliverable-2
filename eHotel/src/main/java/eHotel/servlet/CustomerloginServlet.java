@@ -1,6 +1,7 @@
 package eHotel.servlet;
 
 import java.io.IOException;
+
 import java.util.ArrayList;
 
 import javax.servlet.ServletException;
@@ -9,7 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import eHotel.connections.PostgreSqlConn;
+import eHotel.connections.MySqlConn;
+
 import eHotel.entities.Room;
 import eHotel.entities.employee;
 
@@ -25,7 +27,7 @@ public class CustomerloginServlet extends HttpServlet {
 		String userSSN = req.getParameter("userSSN");
 		String pwd = req.getParameter("pwd");
 		
-		PostgreSqlConn con = new PostgreSqlConn();
+		MySqlConn con = new MySqlConn();
 //		[0]:name,[1]:pwd
 		String[] pwdfromdb = con.getuserinforbycustSSN(userSSN);
 		
