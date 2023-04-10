@@ -17,9 +17,9 @@
    git push <repo URL>
    ```
 #Creating new branches
-'''
+```
 git checkout -b "<Branch name>"
-'''
+```
 
 # TENTATIVE DEADLINE: ~~***APRIL 7TH***~~ ***APRIL 10th***
 
