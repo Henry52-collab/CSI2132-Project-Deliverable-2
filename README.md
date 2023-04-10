@@ -16,7 +16,7 @@
    git commit -m "<Your commit message>"
    git push <repo URL>
    ```
-#Creating new branches
+# Creating new branches
 ```
 git checkout -b "<Branch name>"
 ```
