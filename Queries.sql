@@ -162,38 +162,38 @@ VALUES
 -- 11115
 INSERT INTO Room
 VALUES
-(020,11114,10001,120,3,'sea',true,true),
-(021,11114,10001,130,2,'mountain',true,true),
-(022,11114,10001,150,1,'sea',true,true),
-(023,11114,10001,120,3,'sea',true,true),
-(024,11114,10001,130,2,'mountain',true,true);
+(020,11115,10001,120,3,'sea',true,true),
+(021,11115,10001,130,2,'mountain',true,true),
+(022,11115,10001,150,1,'sea',true,true),
+(023,11115,10001,120,3,'sea',true,true),
+(024,11115,10001,130,2,'mountain',true,true);
 
 -- 11116
 INSERT INTO Room
 VALUES
-(025,11114,10001,120,3,'sea',false,true),
-(026,11114,10001,130,2,'sea',false,true),
-(027,11114,10001,150,1,'sea',true,true),
-(028,11114,10001,120,3,'sea',true,true),
-(029,11114,10001,130,2,'sea',true,true);
+(025,11116,10001,120,3,'sea',false,true),
+(026,11116,10001,130,2,'sea',false,true),
+(027,11116,10001,150,1,'sea',true,true),
+(028,11116,10001,120,3,'sea',true,true),
+(029,11116,10001,130,2,'sea',true,true);
 
 -- 11117
 INSERT INTO Room
 VALUES
-(030,11114,10001,120,3,'moutain',false,true),
-(031,11114,10001,130,2,'moutain',false,true),
-(032,11114,10001,150,1,'moutain',true,true),
-(033,11114,10001,120,3,'moutain',true,true),
-(034,11114,10001,130,2,'moutain',true,true);
+(030,11117,10001,120,3,'moutain',false,true),
+(031,11117,10001,130,2,'moutain',false,true),
+(032,11117,10001,150,1,'moutain',true,true),
+(033,11117,10001,120,3,'moutain',true,true),
+(034,11117,10001,130,2,'moutain',true,true);
 
 -- 11118
 INSERT INTO Room
 VALUES
-(035,11114,10001,120,3,'moutain',false,true),
-(036,11114,10001,130,2,'moutain',false,true),
-(037,11114,10001,150,1,'moutain',false,true),
-(038,11114,10001,120,3,'moutain',false,true),
-(039,11114,10001,130,2,'moutain',false,true);
+(035,11118,810001,120,3,'moutain',false,true),
+(036,11118,10001,130,2,'moutain',false,true),
+(037,11118,10001,150,1,'moutain',false,true),
+(038,11118,10001,120,3,'moutain',false,true),
+(039,11118,10001,130,2,'moutain',false,true);
 
 -- Insert rooms into JingJiang hotels 
 -- 12111
@@ -486,8 +486,7 @@ VALUES
     (002,15118,10005,150,1,'mountain',true,true),
     (003,15118,10005,120,3,'mountain',false,true),
     (004,15118,10005,130,2,'mountain',false,true);
-
-
+    
 
 -- Customer--------------------------------------------------------------------------------------------
 CREATE TABLE Customer(
@@ -522,17 +521,42 @@ CREATE TABLE Rental(
 -- DROP TABLE Rental;
 
 -- Employee
-
-
-
+CREATE TABLE Employee(
+	Employee_ID INT,
+    Hotel_ID INT NOT NULL,
+    Hotel_Chain_ID INT NOT NULL,
+    First_name VARCHAR(100) NOT NULL,
+    Middle_name VARCHAR(100) NOT NULL,
+    Last_name VARCHAR(100) NOT NULL,
+    Address VARCHAR(100) NOT NULL,
+    SIN INT,
+    Role VARCHAR(100) NOT NULL,
+    PRIMARY KEY (Employee_ID,SIN),
+    FOREIGN KEY(Hotel_ID) REFERENCES Hotel(Hotel_ID),
+    FOREIGN KEY(Hotel_Chain_ID) REFERENCES HotelChain(HotelChainID)
+);
 
 -- Booking
-
-
+CREATE TABLE Booking(
+	Booking_ID INT NOT NULL PRIMARY KEY,
+    Customer_ID INT NOT NULL,
+    Room_ID INT NOT NULL,
+    Hotel_ID INT NOT NULL,
+    Hotel_Chain_ID INT NOT NULL,
+    Start_Date DATE,
+    End_Date DATE,
+    FOREIGN KEY(Customer_ID) REFERENCES Customer(CustomerID),
+    FOREIGN KEY(Room_ID) REFERENCES Room(Room_ID),
+    FOREIGN KEY(Hotel_ID) REFERENCES Hotel(Hotel_ID),
+    FOREIGN KEY(Hotel_Chain_ID) REFERENCES HotelChain(HotelChainID)
+);
 
 -- Manager--------------------------------------------------------------------------------------------------------
-
-
+CREATE TABLE Manager(
+	Manager_ID INT,
+    Employee_ID INT,
+    PRIMARY KEY (Manager_ID,Employee_ID)
+);
 
 -- The user should be able to see two specific Views.
 -- You have to implement the views as SQL views. 
