@@ -60,7 +60,7 @@ public class  MySqlConn{
 			String pwd = "";
 			
 	        try{
-	            ps = db.prepareStatement("select Address from ehotel.hotelchain where Address=?");
+	            ps = db.prepareStatement("select Address from ehotel.HotelChain where Address=?");
 	            
 	            ps.setString(1, param);	               
 	            rs = ps.executeQuery();

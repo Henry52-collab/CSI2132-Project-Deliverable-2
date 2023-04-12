@@ -61,7 +61,16 @@ VALUES
 (14118,10004,'THREE',5,'425 Boulevard Adelard Savoie ,Dieppe,New Brunswick E1A 7E6','admin@IHG.com');
 
 -- Populate hotel Wyndham
-
+INSERT INTO hotel
+VALUES
+(15111,10005,'FIVE',5,'1480 René-Lévesque Blvd W ,Montreal,Quebec H3G 0E3','admin@Wyndham.com'),
+(15112,10005,'FIVE',5,'80 East Lake Ave NE ,Airdrie,Alberta T4A 2G8','admin@Wyndham.com'),
+(15113,10005,'FIVE',5,'200 Front St W ,Toronto,Ontario M5V 2X3','admin@Wyndham.com'),
+(15114,10005,'FIVE',5,'5479 No 6 Rd ,Richmond,British Columbia V6W 1E7','admin@Wyndham.com'),
+(15115,10005,'FOUR',5,'1321 Chem. de la Côte de Liesse , Montréal,Quebec H8T 1A6','admin@Wyndham.com'),
+(15116,10005,'FOUR',5,'2120 49 St ,Whitecourt,AlbertaT7S 0E8','admin@Wyndham.com'),
+(15117,10005,'FOUR',5,'2911 John Savage Ave ,Dartmouth,Nova Scotia B3B 0J3','admin@Wyndham.com'),
+(15118,10005,'THREE',5,'1348 Boulevard Adelard Savoie ,Dieppe,New Brunswick E1A 7E6','admin@Wyndham.com');
 
 
 
@@ -406,7 +415,76 @@ VALUES
 (004,14118,10004,130,2,'mountain',false,true);
 
 -- Insert rooms into Wyndham hotels
+INSERT INTO Room
+VALUES
+    (000,15111,10005,120,3,'sea',false,true),
+    (001,15111,10005,130,2,'mountain',false,true),
+    (002,15111,10005,150,1,'mountain',true,true),
+    (003,15111,10005,120,3,'mountain',false,true),
+    (004,15111,10005,130,2,'mountain',false,true);
 
+-- 15112
+INSERT INTO Room
+VALUES
+    (000,15112,10005,120,3,'sea',false,true),
+    (001,15112,10005,130,2,'mountain',false,true),
+    (002,15112,10005,150,1,'mountain',true,true),
+    (003,15112,10005,120,3,'mountain',false,true),
+    (004,15112,10005,130,2,'mountain',false,true);
+
+-- 15113
+INSERT INTO Room
+VALUES
+    (000,15113,10005,120,3,'sea',false,true),
+    (001,15113,10005,130,2,'mountain',false,true),
+    (002,15113,10005,150,1,'mountain',true,true),
+    (003,15113,10005,120,3,'mountain',false,true),
+    (004,15113,10005,130,2,'mountain',false,true);
+
+-- 15114
+INSERT INTO Room
+VALUES
+    (000,15114,10005,120,3,'sea',false,true),
+    (001,15114,10005,130,2,'mountain',false,true),
+    (002,15114,10005,150,1,'mountain',true,true),
+    (003,15114,10005,120,3,'mountain',false,true),
+    (004,15114,10005,130,2,'mountain',false,true);
+
+-- 15115
+INSERT INTO Room
+VALUES
+    (000,15115,10005,120,3,'sea',false,true),
+    (001,15115,10005,130,2,'mountain',false,true),
+    (002,15115,10005,150,1,'mountain',true,true),
+    (003,15115,10005,120,3,'mountain',false,true),
+    (004,15115,10005,130,2,'mountain',false,true);
+
+-- 15116
+INSERT INTO Room
+VALUES
+    (000,15116,10005,120,3,'sea',false,true),
+    (001,15116,10005,130,2,'mountain',false,true),
+    (002,15116,10005,150,1,'mountain',true,true),
+    (003,15116,10005,120,3,'mountain',false,true),
+    (004,15116,10005,130,2,'mountain',false,true);
+
+-- 15117
+INSERT INTO Room
+VALUES
+    (000,15117,10005,120,3,'sea',false,true),
+    (001,15117,10005,130,2,'mountain',false,true),
+    (002,15117,10005,150,1,'mountain',true,true),
+    (003,15117,10005,120,3,'mountain',false,true),
+    (004,15117,10005,130,2,'mountain',false,true);
+
+-- 15118
+INSERT INTO Room
+VALUES
+    (000,15118,10005,120,3,'sea',false,true),
+    (001,15118,10005,130,2,'mountain',false,true),
+    (002,15118,10005,150,1,'mountain',true,true),
+    (003,15118,10005,120,3,'mountain',false,true),
+    (004,15118,10005,130,2,'mountain',false,true);
 
 
 -- Customer--------------------------------------------------------------------------------------------
