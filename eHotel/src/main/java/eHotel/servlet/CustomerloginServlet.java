@@ -2,6 +2,7 @@ package eHotel.servlet;
 
 import java.io.IOException;
 
+
 import java.util.ArrayList;
 
 import javax.servlet.ServletException;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpSession;
 import eHotel.connections.MySqlConn;
 
 import eHotel.entities.Room;
-import eHotel.entities.employee;
+import eHotel.entities.Employee;
 
 public class CustomerloginServlet extends HttpServlet {
 
