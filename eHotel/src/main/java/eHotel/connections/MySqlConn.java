@@ -23,7 +23,7 @@ public class  MySqlConn{
 				Class.forName("org.mysql.Driver"); 
 								
 				db = DriverManager.getConnection("jdbc:mysql://localhost:3306/ehotel",
-						"root", "Henry0217!");
+						"root", "123456");
 				
 				
 				System.out.println("Successfully connected to database");
@@ -60,7 +60,7 @@ public class  MySqlConn{
 			String pwd = "";
 			
 	        try{
-	            ps = db.prepareStatement("select Address from ehotel.HotelChain where Address=?");
+	            ps = db.prepareStatement("select Address from ehotel.HotelChain where Address= 111 Marriott street");
 	            
 	            ps.setString(1, param);	               
 	            rs = ps.executeQuery();
@@ -70,6 +70,7 @@ public class  MySqlConn{
 				}
 	            
 	        }catch(SQLException e){
+	        	System.out.print("Failed to connect to database");
 	            e.printStackTrace();
 	        }finally {
 	        	closeDB();

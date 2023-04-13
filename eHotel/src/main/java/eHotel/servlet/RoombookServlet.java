@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 
 import eHotel.connections.MySqlConn;
 import eHotel.entities.Room;
-import eHotel.entities.employee;
+import eHotel.entities.Employee;
 
 public class RoombookServlet extends HttpServlet {
 
